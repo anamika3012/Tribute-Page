@@ -1,0 +1,263 @@
+/* Import font */
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+/* Body */
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  background: linear-gradient(90deg, #b9d5bd 0%, #a5b3cb 100%);
+}
+
+/* Header */
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.header {
+  background-color: #32525b;
+  color: #ffffff;
+  padding-left: 350px ;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  height: auto;
+}
+p { 
+    
+    border-right: solid 3px rgba(0,255,0,.75);
+    white-space: nowrap;
+    overflow: hidden;    
+    font-family: 'Source Code Pro', monospace;  
+    font-size: 28px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.856);
+  }
+
+
+
+.header h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* Styles for screens smaller than 767px */
+@media only screen and (max-width: 767px) {
+  .header-wrapper {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Resize header and center image */
+  .header {
+    background-color: #323232;
+    color: #f7f7f7;
+    padding: 20px;
+    height: auto;
+  }
+
+  .header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 300;
+  }
+
+  .header h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  #placeholder-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  img {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+/* Main */
+.main {
+  max-width: 1000px;
+  margin: 200px auto 20px;
+  padding: 20px;
+}
+.main h1{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgba(4, 22, 95, 0.863)
+}
+/* Placeholder image */
+#placeholder-img-container {
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+}
+
+img {
+  max-width: 85%;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #000000;
+}
+
+/* attribution-container */
+.attribution-container {
+  font-style: italic;
+  margin-bottom: 10px;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.attribution-container a {
+  color: #015ab9;
+}
+
+.attribution-container a:hover {
+  color: #2373c8;
+  text-decoration: none;
+}
+
+/* text-container */
+.text-container {
+  line-height: 1.8;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.text-container li {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.text-container ul {
+  font-size: 17px;
+  margin-bottom: 20px;
+  display: inline-block;
+  text-align: left;
+}
+
+.home-content{
+  padding: 20px;
+  background: linear-gradient(90deg, #b9d5bd 0%, #a5b3cb 100%);
+}
+
+
+
+.home-content .home-bio{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap:1rem;
+} 
+
+.legabio{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap:0.1rem;
+}
+
+.trans{
+  background: rgba(255, 255, 255, 0.493);
+  padding:10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+
+
+.trans-con {
+  padding:30px;
+  text-align:justify;
+}
+
+.trans-head{
+  text-align:center;
+  padding:10px;
+}
+
+.main h3{
+  color:rgb(10, 121, 70);
+  text-decoration: underline overline;
+}
+
+.main h2{
+    color:rgb(96, 6, 46);
+}
+
+/* Footer */
+.footer-wrapper {
+  margin-top: 50px;
+}
+
+.footer {
+  background-color: #32525b;
+  color: #f7f7f7;
+  padding: 20px;
+  text-align: center;
+  height: auto;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #32525b;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #32525b;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #32525b;
+    color: white;
+  }
+
+
+/* Animation */
+p {
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+               animated-cursor 600ms steps(29,end) infinite;
+  }
+  
+  /* text animation */
+  
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 650px;}
+  }
+  
+  /* cursor animations */
+  
+  @keyframes animated-cursor{
+    from{border-right-color: rgba(0,255,0,.75);}
+    to{border-right-color: transparent;}
+  }
